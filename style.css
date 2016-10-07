@@ -1,9 +1,18 @@
+body {
+  background-color: #79CDCD;
+}
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+}
+
 [data-stack] {
     display: flex;
     justify-content: left;
     align-items: center;
     -webkit-align-items: center;
     display: -webkit-flex;
+    width: 25%;
     height: 101px;
     background-color: aliceblue;
     margin: 25px;
