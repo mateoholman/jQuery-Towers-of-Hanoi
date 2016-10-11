@@ -4,46 +4,65 @@ body {
 
 h1 {
   font-family: 'Shrikhand', cursive;
+  font-size: 40px;
+}
+
+p {
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+.stackContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center
 }
 
 [data-stack] {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    -webkit-align-items: center;
-    display: -webkit-flex;
-    width: 25%;
-    height: 101px;
-    background-color: aliceblue;
-    margin: 25px;
+    flex-direction: column-reverse;
+    height: 300px;
+    width: 120px;
+    background-color: #305252;
+    border: 2px #000 solid;
+    margin: 15px;
 }
 
 [data-block] {
-    width: 25px;
-    float: left;
+  align-self: flex-end;
+  border: 1px #f1fafa solid;
+  height: 25px;
+  background-color: #cdcd79;
+  margin: 0 auto
+
 }
 
 [data-block="25"] {
-    height: 25px;
-    background-color: blue;
+    width: 25px;
 }
 
 [data-block="50"] {
-    height: 50px;
-    background-color: green;
+    width: 50px;
 }
 
 [data-block="75"] {
-    height: 75px;
-    background-color: red;
+    width: 75px;
 }
 
 [data-block="100"] {
-    height: 100px;
-    background-color: yellow;
+    width: 100px;
 }
 
 #announce-game-won {
     font-size: 50px;
     text-align: center;
+}
+
+.stack-hover {
+  background-color: #597474;
 }

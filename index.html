@@ -15,17 +15,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Towers of Hanoi</h1>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
+
+  <header>
+    <h1>Towers of Hanoi</h1>
+  </header>
+
+  <div class="stackContainer">
+    <div data-stack="1">
+      <div data-block="100"></div>
+      <div data-block="75"></div>
+      <div data-block="50"></div>
+      <div data-block="25"></div>
+    </div>
+    <div data-stack="2">
+    </div>
+    <div data-stack="3">
+    </div>
   </div>
-  <div data-stack="2">
-  </div>
-  <div data-stack="3">
-  </div>
+  <p> Number of Moves: <span id="move-counter"></span></p>
   <div id="announce-game-won"></div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
